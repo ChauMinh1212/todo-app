@@ -32,6 +32,7 @@ function App() {
 
   return (
     <div className="App">
+      <p className="title">React ToDo List</p>
       <ToDoForm onSubmit={handleFormSubmitAdd}/>
       {toDoList != 0 ? <h3 className="todos">{toDoList.length} To Do</h3> : null}
       <ToDoList todos={toDoList} onToDoDeleteClick={handleToDoDelete} onToDoUpdateClick={hadleFormSubmitUpdate}/>
